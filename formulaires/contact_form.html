@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>DreamHome - Formulaire de contact</title>
+        <link href="../styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="header">
+            <nav class="top_nav">
+                <div class="div-logo">
+                    <img src="../Image/design/logo.png" alt="logo représentant une petite maison" />
+                    <h1>&ensp;DreamHome</h1>
+                </div>
+                <div class="div-flex-menu">
+                    <ul>
+                        <!--onglet explorer déroulant-->
+                        <li class="deroulant">
+                            <img class="icone_menu" src="../Image/icones/boussole.png" alt="logo d'une boussole" /><a href="#">Catégories</a>
+                            <ul class="sous">
+                                <li><a title="Catégorie de logements insolites" href="../categories/insolites.html">Les insolites</a></li>
+                                <li><a title="Catégorie de logements proches de la nature" href="../categories/nature.html">Au naturel</a></li>
+                                <li><a title="Catégorie de logements de style contemporain"  href="../categories/architecture.html">L'architecte</a></li>
+                                <li><a title="Catégorie de logements de style vintage"  href="../categories/vintage.html">Les vintages</a></li>
+                                <li><a title="Catégorie tous les logements" href="../logements/tous_logements.html">Tous les logements</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><img class="icone_menu" src="../Image/icones/reserve.png" alt="logo de validation" /><a href="reservation_form.html">Réserver</a></li>
+                        <li><img class="icone_menu" src="../Image/icones/avis.png" alt="logo de bulle de dialogue" /><a href="../index.html#section-avis-clients">Vos avis</a></li>
+                        <li><img class="icone_menu" src="../Image/icones/accueil.png" alt="logo d'une petite maison" /><a href="../index.html">Accueil</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="section-title">
+            <h2>Nous écrire</h2>
+        </div>
+
+        <section class="formulaire">
+            <!--hekiki9895@cetnob.com // https://temp-mail.org/fr/view/66ebd9c37e35600014b6a52d // https://web3forms.com/#start -->
+            <form class="element-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="on">
+            <input type="hidden" name="access_key" value="c972a019-4895-4010-822d-263e258d0cd5" />
+                <fieldset class="info-personnelles">
+                    <legend>Informations personnelles :</legend>
+                    <div class="champs">
+                        <label for="nom">Nom* :</label>
+                        <input type="text" id="nom" name="nom" minlength="2" maxlength="25" required autocomplete="family-name" />
+                    </div>
+                    <div class="champs">
+                        <label for="prenom">Prénom* :</label>
+                        <input type="text" id="prenom" name="prenom" minlength="2" maxlength="25" required autocomplete="name" />
+                    </div>
+                    <div class="champs">
+                        <label for="mail">E-mail* :</label>
+                        <input type="email" id="mail" name="mail" required autocomplete="email" />
+                    </div>
+                    <div class="champs">
+                        <label for="age">Age :</label>
+                        <input type="number" id="age" name="age" min="16" max="99" optional />
+                    </div>
+                    <div class="champs">
+                        <label for="pays">Pays de résidence :</label>
+                        <select id="pays" name="pays">
+                            <optgroup label="Europe">
+                                <option value="">Sélectionnez</option>
+                                <option value="france">France</option>
+                                <option value="belgique">Belgique</option>
+                                <option value="suisse">Suisse</option>
+                            </optgroup>
+                            <optgroup label="Afrique">
+                                <option value="algerie">Algérie</option>
+                                <option value="tunisie">Tunisie</option>
+                                <option value="maroc">Maroc</option>
+                            </optgroup>
+                            <optgroup label="Amérique">
+                                <option value="canada">Canada</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="motif-demande">
+                    <legend>Motif de la demande* :</legend>
+                    <div class="champs radio">
+                        
+                        <label for="aide"><input type="radio" id="aide" name="motif" value="aide" required /> Besoin d'aide</label>
+                        
+                        <label for="renseignement"><input type="radio" id="renseignement" name="motif" value="renseignement"  /> Demande de renseignements</label>
+                        
+                        <label for="autre"><input type="radio" id="autre" name="motif" value="autre"  /> Autre</label>
+                    </div>
+                    <div class="champ">
+                        <textarea name="demande" placeholder="Décrivez votre demande: " maxlength="500" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="validation">
+                    <legend>Validation :</legend>
+                    <div class="champs">
+                        <label for="contact"><input type="checkbox" id="contact" name="recall"/> J'accepte d'être recontacté(e)</label>  
+                    </div>
+                    <div class="champs">
+                        <input type="submit" value="Envoyer" />
+                    </div>
+                    <p class="mentions-legales">* Informations obligatoires</p>
+                    <p class="mentions-legales">Les informations recueillies font l'objet d'un traitement informatisé.
+                    Les destinataires des données collectées est DreamHome.</p>
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <div class="copyright">
+                <a href="#header">© 2024 - DreamHome</a>
+            </div>
+            <div class="footer-contact">
+                <p>
+                <a href="../index.html">Revenir à l'accueil</a>
+                </p>
+            </div>
+            <div class="CGV">
+                <a title="Lien vers les conditions générales"  href="../juridique/conditionsGenerales.html">Conditions générales</a>
+                <a title="Lien vers la politique de confidentialité"  href="../juridique/confidentialite.html">Politique de confidentialité</a>
+            </div>
+            
+        </footer>
+
+
+    </body>
+</html>

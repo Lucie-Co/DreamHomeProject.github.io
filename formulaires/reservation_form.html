@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>DreamHome - Formulaire de réservation d'un séjour inoubliable</title>
+        <link href="../styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="header">
+            <nav class="top_nav">
+                <div class="div-logo">
+                    <img src="../Image/design/logo.png" alt="logo représentant une petite maison" />
+                    <h1>&ensp;DreamHome</h1>
+                </div>
+                <div class="div-flex-menu">
+                    <ul>
+                        <!--onglet explorer déroulant-->
+                        <li class="deroulant">
+                            <img class="icone_menu" src="../Image/icones/boussole.png" alt="logo d'une boussole" /><a href="#">Catégories</a>
+                            <ul class="sous">
+                                <li><a title="Catégorie de logements insolites" href="../categories/insolites.html">Les insolites</a></li>
+                                <li><a title="Catégorie de logements proches de la nature" href="../categories/nature.html">Au naturel</a></li>
+                                <li><a title="Catégorie de logements de style contemporain"  href="../categories/architecture.html">L'architecte</a></li>
+                                <li><a title="Catégorie de logements de style vintage"  href="../categories/vintage.html">Les vintages</a></li>
+                                <li><a title="Catégorie tous les logements" href="../logements/tous_logements.html">Tous les logements</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><img class="icone_menu" src="../Image/icones/avis.png" alt="logo de bulle de dialogue" /><a href="../index.html#section-avis-clients">Vos avis</a></li>
+                        <li><img class="icone_menu" src="../Image/icones/avion-en-papier.png" alt="logo d'un avion de papier" /><a href="../formulaires/contact_form.html">Nous contacter</a></li>
+                        <li><img class="icone_menu" src="../Image/icones/accueil.png" alt="logo d'une petite maison" /><a href="../index.html">Accueil</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="section-title">
+            <h2>Demande de réservation</h2>
+        </div>
+
+        <section class="formulaire">
+            <p class="reservation-infos">
+                🔖 Afin de réserver votre voyage, veuillez remplir le formulaire ci-dessous. Nous reviendrons vers vous pour valider votre demande et procéder au réglement. 
+            </p>
+            <!--hekiki9895@cetnob.com // https://temp-mail.org/fr/view/66ebd9c37e35600014b6a52d // https://web3forms.com/#start -->
+            <form class="element-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c972a019-4895-4010-822d-263e258d0cd5" />
+                <fieldset class="info-personnelles">
+                    <legend>Informations personnelles :</legend>
+                    <div class="champs">
+                        <label for="nom">Nom* :</label>
+                        <input type="text" id="nom" name="nom" minlength="2" maxlength="25" required />
+                    </div>
+                    <div class="champs">
+                        <label for="prenom">Prénom* :</label>
+                        <input type="text" id="prenom" name="prenom" minlength="2" maxlength="25" required />
+                    </div>
+                    <div class="champs">
+                        <label for="mail">E-mail* :</label>
+                        <input type="email" id="mail" name="mail" required />
+                    </div>
+                </fieldset>
+                <fieldset class="info-voyage">  
+                    <legend>Votre séjour :</legend>  
+                    <div class="champs">
+                        <label for="nombre">Nombre de personnes* :</label>
+                        <input type="number" id="nombre" name="nombre" min="1" max="10" required /> <!--personnaliser l'age min-->
+                    </div>
+                    <div class="champs">
+                        <label for="sejour">Séjour choisi* :</label>
+                        <select id="sejour" name="choix-sejour" required>
+                            <optgroup label="Les insolites">
+                                <option value="">Sélectionnez</option>
+                                <option value="Peter Pan">La maison Peter Pan</option>
+                                <option value="sous les mers">20 000 Lieux sous les mers</option>
+                            </optgroup>
+                            <optgroup label="Au naturel">
+                                <option value="Yéti">Le refuge du Yéti</option>
+                                <option value="the Rock">In the Rock</option>
+                            </optgroup>
+                            <optgroup label="L'architecte">
+                                <option value="Le Corbusier">Le Corbusier</option>
+                                <option value="Le château">Le château enchanté</option>
+                            </optgroup>
+                            <optgroup label="Les vintages"></optgroup>
+                                <option value="Le bateau">Le bateau de Jack Sparrow</option>
+                                <option value="The Cottage">The English Cottage</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="champs">
+                        <label for="option">Option choisie en fonction du séjour (+5€) :</label>
+                        <select id="option" name="choix-option">
+                            <optgroup label="Le bateau de Jack Sparrow">
+                                <option value="">-- Sélectionnez --</option>
+                                <option value="sortie-bateau">Sorties en bateau</option>
+                                <option value="diner-pirate">Dîner thématique pirate</option>
+                                <option value="deguisements">Déguisements et jeux de chasse au trésor</option>
+                            </optgroup>
+                            <optgroup label="Le château enchanté">
+                                <option value="diner-royal">Dîner royal privé</option>
+                                <option value="caleche">Balades en calèche</option>
+                                <option value="legendes">Soirée conte et légendes</option>
+                            </optgroup>
+                            <optgroup label="Le Corbusier">
+                                <option value="visite-architecture">Visite architecturale privée</option>
+                                <option value="atelier-art">Ateliers d'art contemporain</option>
+                                <option value="majordome">Service de majordome</option>
+                            </optgroup>
+                            <optgroup label="The English Cottage">
+                                <option value="atelier-cuisine">Atelier de cuisine traditionnelle</option>
+                                <option value="the">Service de thé anglais</option>
+                                <option value="cheval">Balades à cheval</option>
+                            </optgroup>
+                            <optgroup label="La maison Peter Pan">
+                                <option value="conte">Service de contes pour enfants</option>
+                                <option value="kit exploration">Kit d'exploration nature</option>
+                                <option value="petit_dejeuner">Petit-déjeuner suspendu</option>
+                            </optgroup>
+                            <optgroup label="In the Rock">
+                                <option value="pique-nique">Service de pique-nique sur la falaise</option>
+                                <option value="balades">Balades guidées le long des falaises</option>
+                                <option value="yoga">Cours de yoga face à l'océan</option>
+                            </optgroup>
+                            <optgroup label="20 000 Lieux sous les mers">
+                                <option value="Excursions">Excursions sous-marines</option>
+                                <option value="fruits-mer">Dégustation de fruits de mer</option>
+                                <option value="film">Projection de films d'aventure sous-marine</option>
+                            </optgroup>
+                            <optgroup label="Le refuge du Yéti">
+                                <option value="chiens-traineau">Excursions en chiens de traîneau ou raquettes</option>
+                                <option value="massage">Service de massages chauds</option>
+                                <option value="plats froids">Dégustation de plats typiques de régions froides</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="date-reservation">
+                    <legend>Dates souhaitées*:</legend>
+                    <div class="champs">
+                        
+                        <label for="start">Début du séjour :</label>
+                        <input type="date" id="start" name="debut_sejour" value="2024-10-01" min="2024-10-01" max="2024-12-30" required />
+                    </div>
+                    <div class="champs">
+                        <label for="end">Fin du séjour :</label>
+                        <input type="date" id="end" name="fin_sejour" value="2024-10-01" min="2024-10-02" max="2024-12-31" required />
+
+                    </div>
+                    <div class="champ">
+                        <textarea name="precision" placeholder="Avez-vous des précisions à ajouter ? " maxlength="500"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="validation">
+                    <legend>Validation :</legend>
+                    <div class="champs">
+                        <label for="contact"><input type="checkbox" id="contact" name="recall"/> J'accepte d'être recontacté(e)</label>  
+                    </div>
+                    <div class="champs">
+                        <input type="submit" value="Envoyer" />
+                    </div>
+                    <p class="mentions-legales">* Informations obligatoires</p>
+                    <p class="mentions-legales">Les informations recueillies font l'objet d'un traitement informatisé.
+                    Les destinataires des données collectées est DreamHome.</p>
+                </fieldset>
+            </form>
+        </section>
+        
+        <footer>
+            <div class="copyright">
+                <a href="#header">© 2024 - DreamHome</a>
+            </div>
+            <div class="footer-contact">
+                <p>
+                <a href="../index.html">Revenir à l'accueil</a>
+                </p>
+            </div>
+            <div class="CGV">
+                <a title="Lien vers les conditions générales"  href="../juridique/conditionsGenerales.html">Conditions générales</a>
+                <a title="Lien vers la politique de confidentialité"  href="../juridique/confidentialite.html">Politique de confidentialité</a>
+            </div>
+            
+        </footer>
+
+
+    </body>
+</html>

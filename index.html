@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>DreamHome - Page d'Accueil</title>
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="header">
+            <nav class="top_nav">
+                <div class="div-logo">
+                    <img src="Image/design/logo.png" alt="logo représentant une petite maison" />
+                    <h1>&ensp;DreamHome</h1>
+                </div>
+                <div class="div-flex-menu">
+                    <ul>
+                        <!--onglet explorer déroulant-->
+                        <li class="deroulant">
+                            <img class="icone_menu" src="Image/icones/boussole.png" alt="logo d'une boussole" /><a href="#">Catégories</a>
+                            <ul class="sous">
+                                <li><a title="Catégorie de logements insolites" href="categories/insolites.html">Les insolites</a></li>
+                                <li><a title="Catégorie de logements proches de la nature" href="categories/nature.html">Au naturel</a></li>
+                                <li><a title="Catégorie de logements de style contemporain" href="categories/architecture.html">L'architecte</a></li>
+                                <li><a title="Catégorie de logements de style vintage" href="categories/vintage.html">Les vintages</a></li>
+                                <li><a title="Catégorie tous les logements" href="logements/tous_logements.html">Tous les logements</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><img class="icone_menu" src="Image/icones/reserve.png" alt="logo de validation" /><a title="Formulaire de reservation" href="formulaires/reservation_form.html">Réservez</a></li>
+                        <li><img class="icone_menu" src="Image/icones/avis.png" alt="logo d'un pousse levé" /><a title="Nos avis clients" href="#section-avis-clients">Vos avis</a></li>
+                        <li><img class="icone_menu" src="Image/icones/avion-en-papier.png" alt="logo d'un avion de papier" /><a title="Formulaire de contact" href="formulaires/contact_form.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </header>
+        <section class="section-accroche">
+            <div class="accroche-left">
+                <q>Découvrez des lieux insolites et évadez-vous avec DreamHome</q>
+                <button type="button"><a title="Formulaire de reservation" href="formulaires/reservation_form.html">Je réserve</a></button>
+            </div>
+            <div class="accroche-right">
+                <img src="Image/design/bandeau-principal.png" alt="Le visage d'une femme au travers duquelle on découvre un paysage" />
+            </div>
+        </section>
+        <section class="section-coup-coeur">
+            <div class="section-title">
+                <h2>Nos coups de coeur</h2>
+            </div>
+            <div  class="section-vignettes">
+                    <figure>
+                    <img src="Image/miniatures/rock.png" alt="Maison creusée dans la roche" title="In the 'Rock'" />
+                    <figcaption><a title="Découvrez ce logement In the Rock" href="logements/rock.html">In the "Rock"</a></figcaption>
+                    </figure>
+ 
+                    <figure>
+                    <img src="Image/miniatures/snow.png" alt="Une salle de bain dans creusée dans la neige" title="Le refuge du Yéti" />
+                    <figcaption><a title="Découvrez ce logement Le refuge du Yéti" href="logements/yeti.html">Le refuge du Yéti</a></figcaption>
+                    </figure>
+
+                    <figure>
+                    <img src="Image/miniatures/castle.png" alt="Une chambre de chateau, grand luxe, chaleureuse" title="Le château enchanté" />
+                    <figcaption><a title="Découvrez ce logement Le château enchanté" href="logements/chateau.html">Le château enchanté</a></figcaption>
+                    </figure>
+            </div>
+            
+        </section>
+
+        <section class="section-tendances">
+            <div class="section-title">
+                <h2>Nos destinations tendances</h2>
+            </div>
+            <div  class="section-vignettes">
+                    <figure>
+                    <img src="Image/miniatures/underwater.png" alt="Un salon dans un loft sous la mer" title="20 000 lieues sous les mers" />
+                    <figcaption><a title="Découvrez ce logement Vingt-mille lieues sous les mers" href="logements/sous_l_eau.html">Vingt-mille lieues sous les mers</a></figcaption>
+                    </figure>
+ 
+                    <figure>
+                    <img src="Image/miniatures/english.png" alt="Un cottage de style typquement anglais, ensoleillé" title="Le cottage typique" />
+                    <figcaption><a title="Découvrez ce logement The English Cottage" href="logements/cottage.html">The English "Cottage"</a></figcaption>
+                    </figure>
+
+                    <figure>
+                    <img src="Image/miniatures/ship.png" alt="Un bateau aménagé en maison, sur deux étages avec des tourelles et une cheminée" title="Pirates des Caraïbes" />
+                    <figcaption><a title="Découvrez ce logement Le bateau de Jack Sparrow" href="logements/bateau.html">Le bateau de Jack Sparrow</a></figcaption>
+                    </figure>
+            </div>
+
+        </section>
+        <section id="section-avis-clients">
+            <div class="section-title">
+                <h2>Ce qu'ils en disent</h2>
+            </div>
+            <div class="conteneur-grid-avis">
+                <div class="a1">
+                    <a title="Découvrez ce logement Le Château Enchanté" href="logements/chateau.html">
+                        <img src="Image/miniatures-avis/castle.png" alt="Une chambre de chateau, grand luxe, chaleureuse" title="Le château enchanté" />
+                    </a>
+                </div>
+                <div class="a2">
+                    <h5 class="avis-titre">Le Château Enchanté ★★★★☆</h5>
+                    <p>"Un rêve devenu réalité. Ce château est tout droit sorti d'un conte de fées,
+                    parfait pour un séjour romantique et magique. Chaque 
+                    instant était comme dans une histoire de princesse."</p>
+                    <p class="avis-nom">
+                        <time datetime="25-01-2024">Le 25 Janvier 2024</time> - <em>Cendrillon.</em>
+                    </p> 
+                </div>
+    
+                <div class="a3">
+                    <h5 class="avis-titre">Le Refuge du Yéti ★★★★★</h5>
+                    <p>"Une expérience incroyable ! Affronter le froid glacial et se détendre dans le jacuzzi 
+                    au milieu de la glace, c'était un défi que je suis fier d'avoir relevé. Un vrai refuge pour les aventuriers."</p>
+                    <p class="avis-nom">
+                        <time datetime="05-02-2024">Le 5 Frévier 2024</time> - <em>Tintin.</em>
+                    </p>
+                </div>
+                <div class="a4">
+                    <a title="Découvrez ce logement Le Refuge du Yéti" href="logements/yeti.html">
+                        <img src="Image/miniatures-avis/snow.png" alt="Une maisonnette batie dans la neige" title="Le refuge du Yéti"/>
+                    </a>
+                </div>
+                <div class="a5">
+                    <a title="Découvrez ce logement Le bateau de Jack Sparrow" href="logements/bateau.html">
+                        <img src="Image/miniatures-avis/ship.png" alt="Un bateau aménagé en maison, un salon qui laisse passer un bras de mer" title="Pirates des Caraïbes"/>
+                    </a>
+                </div>
+                <div class="a6">
+                    <h5 class="avis-titre">Le bateau de Jack Sparrow ★★★★★</h5>
+                    <p>"Si vous aimez l'aventure et le luxe, ce bateau est un pur bijou !
+                    L'eau qui passe sous le salon est magique, tout en restant bien au sec. Un rêve pour les fans de pirates."</p>
+                    <p class="avis-nom">
+                        <time datetime="18-08-2024">Le 18 Aout 2024</time> - <em>Barbe Noire.</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="copyright">
+                <a href="#header">© 2024 - DreamHome</a>
+            </div>
+            <div class="footer-contact">
+                <p>
+                <a href="formulaires/contact_form.html">Contactez-nous</a>
+                </p>
+            </div>
+            <div class="CGV">
+                <a title="Lien vers les conditions générales" href="juridique/conditionsGenerales.html">Conditions générales</a>
+                <a title="Lien vers la politique de confidentialité" href="juridique/confidentialite.html">Politique de confidentialité</a>
+            </div>
+            
+        </footer>
+
+
+    </body>
+</html>
